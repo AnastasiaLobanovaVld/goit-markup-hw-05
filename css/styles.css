@@ -688,8 +688,16 @@ overflow: hidden;
     outline: transparent;
 }
 
+.textarea-section {
+    margin-bottom: 16px;
+}
+
 .modal-textarea:focus {
     border-color: #4D5AE5;
+}
+
+.checkbox-section {
+    margin-bottom: 24px;
 }
 
 .checkbox-text {
@@ -702,6 +710,7 @@ overflow: hidden;
 }
 
 .checkbox-span {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
