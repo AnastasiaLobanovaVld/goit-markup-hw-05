@@ -485,6 +485,10 @@ overflow: hidden;
     gap: 16px;
 }
 
+.footer-subscribe-section {
+    margin-left: 70px;
+}
+
 .footer-subscribe-p {
     margin-bottom: 16px;
     font-weight: 500;
@@ -499,10 +503,11 @@ overflow: hidden;
 }
 
 .footer-email {
-    border: 1px solid var(--white);
+    border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
+    padding-left: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
     font-weight: 400;
@@ -527,10 +532,12 @@ overflow: hidden;
     color: #ffffff;
     background-color: #4D5AE5;
     cursor: pointer;
+    border: none;
 }
 
 .footer-icon-subscribe {
     fill: #ffffff;
+    margin-left: 16px;
 }
 
 /*======================*/
