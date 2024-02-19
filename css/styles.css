@@ -195,22 +195,31 @@ border: none;
     }
 }
 .mob-menu {
-    width: 100vw;
-    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #FCFCFC;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     opacity: 0;
     pointer-events: 0;
     visibility: hidden;
 }
 
+.mob-container{
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .mob-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     border-radius: 100%;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -256,11 +265,11 @@ border: none;
 }
 
 .mob-menu-address {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .mob-menu-social-list {
@@ -285,6 +294,12 @@ border: none;
 
 .mob-menu-social-icon {
     fill: #F4F4FD;
+}
+
+@media screen and (min-width: 768px) {
+.mob-menu{
+    display: none;
+}
 }
 /*======================*/
 
@@ -724,21 +739,36 @@ overflow: hidden;
 }
 
 .footer-container {
-    /* display: flex;
-    align-items: baseline; */
+    /* display: flex; */
+    /* align-items: baseline;  */
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-first-container {
-    display: block;
-    margin-right: 120px; 
+    /* margin-right: 120px;  */
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
+}
+
+.footer-social-container{
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-logo {
     color: var(--CLOUD, #F4F4FD);
     font-family: Raleway;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
@@ -773,7 +803,11 @@ overflow: hidden;
 }
 
 .footer-subscribe-section {
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-subscribe-p {
@@ -787,6 +821,9 @@ overflow: hidden;
 .footer-form {
     display: flex;
     gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-email {
@@ -825,6 +862,74 @@ overflow: hidden;
 .footer-icon-subscribe {
     fill: #ffffff;
     margin-left: 16px;
+}
+@media screen and (min-width: 768px) {
+.footer-container {
+        max-width: 768px;
+        width: 100%;
+        height: 100%;
+        padding-left: 108px;
+    }
+
+    .first-block{
+        display: flex;
+        column-gap: 24px;
+        margin-bottom: 72px;
+    }
+    
+    .footer-first-container {
+        /* margin-right: 120px;  */
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer-social-container {
+        align-items: flex-start;
+    }
+
+    .footer-subscribe-section{
+        margin-left: 70px; 
+    }
+    
+    .footer-subscribe-p {
+        /* margin-left: 70px; */
+    }
+
+    .footer-form{
+    flex-direction: row;
+    align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    
+    .footer {
+        padding: 100px 0px; 
+    }
+    
+    .footer-container {
+        display: flex;  
+        align-items: baseline;    
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .first-block {
+        margin-bottom: 0;
+        column-gap: 0;
+    }
+
+    .footer-first-container {
+        margin-right: 120px; 
+    }
+
+    .footer-subscribe-section {
+        display: flex;
+        margin-left: 80px;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
 }
 
 /*======================*/
