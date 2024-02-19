@@ -194,6 +194,95 @@ border: none;
         column-gap: 40px;
     }
 }
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FCFCFC;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mob-menu-close {
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    display: block;
+    margin-bottom: 24px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-close-icon {}
+
+.mob-menu-list {
+    margin-bottom: 60px;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.mob-menu-current {}
+
+.mob-menu-nav {}
+
+.mob-menu-address-list {
+    margin-bottom: 48px;
+}
+
+.mob-menu-address-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-menu-address {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.mob-menu-social-list {
+    display: flex;
+    gap:40px;
+}
+
+.mob-menu-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-menu-social-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--IRIS, #4D5AE5);
+}
+
+.mob-menu-social-icon {
+    fill: #F4F4FD;
+}
 /*======================*/
 
 /*=========HERO=========*/
@@ -627,12 +716,13 @@ overflow: hidden;
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 96px 0;
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
 }
 
 .footer-first-container {
