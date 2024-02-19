@@ -205,6 +205,9 @@ border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: 0;
+    visibility: hidden;
 }
 
 .mob-menu-close {
